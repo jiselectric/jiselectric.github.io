@@ -58,8 +58,8 @@ webmaster_verifications:
 
 # Web Analytics Settings
 analytics:
-  google: G-982C6DB08W
-    id: # fill in your Google Analytics ID
+  google:
+    id: G-982C6DB08W # fill in your Google Analytics ID
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
@@ -223,3 +223,6 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+plugins:
+   - jekyll-target-blank
