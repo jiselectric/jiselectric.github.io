@@ -715,7 +715,7 @@ $btn-mb: 0.5rem;
     width: 7rem;
     height: 7rem;
     overflow: hidden;
-    box-shadow: var(--avatar-border-color) 0 0 0 2px;
+    box-shadow: var(--avatar-border-color) 0 0 0 0px;
     transform: translateZ(0); /* fixed the zoom in Safari */
 
     img {
@@ -741,7 +741,7 @@ $btn-mb: 0.5rem;
     @extend %sidebar-link-hover;
 
     font-family: inherit;
-    font-weight: 900;
+    font-weight: 100;
     font-size: 1.75rem;
     line-height: 1.2;
     letter-spacing: 0.25px;
