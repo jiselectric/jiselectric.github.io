@@ -273,7 +273,7 @@ And this is where the concept of **linear combination** that we have covered so 
 Let's say we have a MLP with structure of **(2, 3, 3, 1)**:
 
 <center>
-    <img src="{{ '/assets/img/linear_transformation/mlp.png' | relative_url }}" alt="mlp diagram">
+    <img src="{{ '/assets/img/linear_transformation/mlp.png' | relative_url }}" alt="xor diagram">
 </center>
 
 - **Input**: 2 neurons
