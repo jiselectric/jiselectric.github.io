@@ -176,7 +176,7 @@ b
 =
 \begin{bmatrix}
 a + 2b + 5 \\
-3a + 4c + 6
+3a + 4b + 6
 \end{bmatrix}
 $$
 
