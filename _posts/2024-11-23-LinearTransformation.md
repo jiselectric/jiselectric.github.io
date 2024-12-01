@@ -12,17 +12,17 @@ toc: true
 toc_sticky: true
 
 math: true
-data: 2024-11-23
+date: 2024-11-23
 last_modified_at: 2024-11-23
 ---
 
-# Introduction
+## Introduction
 
 In our previous [post](https://jiselectric.github.io/posts/Gradient/), we explored the fundamental concept of derivatives and their application in neural networks. We manually performed backpropagation using the chain rule, adjusting the parameters (specifically, the leaf nodes) to refine the output through incremental updates.
 
 Before diving deeper into the construction of more complex neural networks, we will take some time to explore the concepts of **vectors**, **matrices**, and **linear transformations**. These are essential foundations because, at its core, a neural network is an insane matrix multiplications machine that scales and transforms the inputs.
 
-# Problem Statement: XOR Gate
+## Problem Statement: XOR Gate
 
 <center>
     <img src="{{ '/assets/img/linear_transformation/xor.png' | relative_url }}" alt="xor diagram">
@@ -38,7 +38,7 @@ The `Value` class, as implemented in previous post, forms the foundation for con
 - **Scalar Computations Only**: The class is designed for scalar operations like addition and multiplication, whereas a typical MLP performs operations involving multiple weights and biases simultaneously (vectorized or matrix computations).
 - **No Non-Linear Activation Functions**: The current implementation lacks **non-linear activation functions**, which are essential in MLPs to introduce the non-linear decision boundaries needed for solving problems like XOR or enabling the network to approximate complex functions.
 
-# Quick Review on Vector
+## Quick Review on Vector
 
 The concept of a vector carries different nuances across fields like Physics, Computer Science, and Mathematics. For simplicity in this post, we will rely on the mathematical definition: 
 
@@ -73,7 +73,7 @@ $$
 \in \mathbb{R^2}
 $$
 
-# Implication of Matrix Multiplication
+## Implication of Matrix Multiplication
 
 The vector definition that we set above gives new interpretation of matrix-vector multiplication. Given a matrix-vector multiplication form of:
 
@@ -143,12 +143,12 @@ W &=
 1 & 2 \\
 3 & 4
 \end{bmatrix}, \quad
-X = 
+\vec{X} = 
 \begin{bmatrix}
 a \\
 b
 \end{bmatrix}, \quad
-b =
+\vec{b} =
 \begin{bmatrix}
 5 \\
 6
@@ -156,9 +156,10 @@ b =
 \end{aligned}
 $$
 
-Therefore: 
+Therefore:
+
 $$
-y = WX + b = 
+\vec{y} = W\vec{X} + \vec{b} = 
 \begin{bmatrix}
 1 & 2 \\
 3 & 4
@@ -185,7 +186,7 @@ With this expression in my mind, we can ask:
 - If so, how should we linearly transform those column vectors to create $y$?
 
 
-# Linear Transformation
+## Linear Transformation
 
 We’ve taken quite a detour to arrive at today’s topic — **linear transformation**. However, the journey has been worthwhile, as it has prepared us to understand how an input vector is transformed into a new output vector, mapped to a different vector space through matrix multiplication.
 
@@ -262,7 +263,7 @@ $$
 Therefore, a 2D linear transformation of $\vec{v}$ can be described using a matrix of of 4 numbers which stores the coordinates of $\hat{i}$ and $\hat{j}$ (so long as the basis vectors $i$ and $j$ are [linearly independent](https://en.wikipedia.org/wiki/Linear_independence)).
 
 
-# Non-linearity & Activation Function
+## Non-linearity & Activation Function
 
 Let's now go back to the XOR problem that we discussed earlier. Two major approaches to enable simple perceptrons to solve the XOR problem are:
 - **Multi-layer Perceptrons (MLPs)**: By introducing additional hidden layers, the network can learn intermediary features and construct complex non-linear decision boundaries.
@@ -312,7 +313,7 @@ Where:
 - $\tilde{W} = W^3 \cdot W^2 \cdot W^1$: Effective weight matrix combining all transformations.
 - $\tilde{b}$: Effective bias vector.
 
-# Conclusion
+## Conclusion
 
 We began by exploring the fundamental operations of vectors, understanding matrix-vector multiplication, and examining various interpretations of linear transformations. We then discussed how a neural network without a non-linear activation function is simply a stack of linear transformations, rendering it ineffective for solving non-linear problems.
 
@@ -321,7 +322,7 @@ As mentioned earlier, there are many activation functions, each with unique attr
 Having established the importance of introducing non-linearity, we are now well-equipped to design a complex multi-layer perceptron with activation functions.
 
 
-# Resources
+## Resources
 - [KR: Vector's Basic Operation](https://angeloyeo.github.io/2020/09/07/basic_vector_operation.html)
 - [KR: Matrix and Linear Transformation](https://www.youtube.com/watch?v=euMsKPfj_Ss)
 - [Linear transformations and matrices \| Chapter 3, Essence of linear algebra](https://www.youtube.com/watch?v=kYB8IZa5AuE&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=4)
