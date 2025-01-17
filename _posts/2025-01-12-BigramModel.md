@@ -592,12 +592,12 @@ In this post, we explored two different approaches to building a bigram language
 - Neural Network Bigram Model
 
 While both methods achieved similar results (NLL of `~2.45` for statistical and `~2.50` for neural network), they took fundamentally different paths to get there:
-- The statistical approach directly calculated probabilities from frequency counts in a lookup table
-- The neural network approach learned these probabilities through gradient descent on its weight matrix
+- Statistical Approach: directly calculates probabilities from frequency counts in a lookup table.
+- Neural Network Approach: learned these probabilities through gradient descent on its weight matrix.
 
 One key advantage of the neural network approach is its scalability. Consider extending this to a trigram model (predicting based on the previous two characters) or even larger n-grams:
 - Statistical Approach: The size of the probability table grows exponentially (`27³` for trigrams, `27⁴` for 4-grams, etc.)
-- Neural network Approach: The architecture can be adapted with minimal increase in parameters
+- Neural Network Approach: The architecture can be adapted with minimal increase in parameters
 
 This scalability advantage makes neural networks the preferred choice for more complex language modeling tasks, even though both approaches perform similarly for this simple bigram case. 
 
