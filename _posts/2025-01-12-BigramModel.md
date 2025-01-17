@@ -596,8 +596,8 @@ While both methods achieved similar results (NLL of `~2.45` for statistical and 
 - The neural network approach learned these probabilities through gradient descent on its weight matrix
 
 One key advantage of the neural network approach is its scalability. Consider extending this to a trigram model (predicting based on the previous two characters) or even larger n-grams:
-- Statistical approach: The size of the probability table grows exponentially (`27³` for trigrams, `27⁴` for 4-grams, etc.)
-- Neural network approach: The architecture can be adapted with minimal increase in parameters
+- Statistical Approach: The size of the probability table grows exponentially (`27³` for trigrams, `27⁴` for 4-grams, etc.)
+- Neural network Approach: The architecture can be adapted with minimal increase in parameters
 
 This scalability advantage makes neural networks the preferred choice for more complex language modeling tasks, even though both approaches perform similarly for this simple bigram case. 
 
