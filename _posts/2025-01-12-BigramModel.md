@@ -585,7 +585,7 @@ danie.
 mezpghimannan.
 ```
 
-### Conclusion
+## Conclusion
 
 In this post, we explored two different approaches to building a bigram language model:
 - Statistical Bigram Model
@@ -601,5 +601,5 @@ One key advantage of the neural network approach is its scalability. Consider ex
 
 This scalability advantage makes neural networks the preferred choice for more complex language modeling tasks, even though both approaches perform similarly for this simple bigram case. 
 
-### Resources
+## Resources
 - [The spelled-out intro to language modeling: building makemore](https://www.youtube.com/watch?v=PaCmpygFfXo&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=2)
