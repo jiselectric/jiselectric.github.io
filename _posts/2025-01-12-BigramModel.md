@@ -282,7 +282,7 @@ mezan.
 
 Now that we have trained a bigram model, we can evaluate the model using the [loss function](https://en.wikipedia.org/wiki/Loss_function). The loss function is a measure of how well the model is performing. The lower the loss, the better the model is performing.
 
-We will be using the negative log-likelihood (NLL) as the loss function. If you are not familiar with the concept of maximum likelihood estimation or negative log-likelihood, please refer to the [post](https://jiselectric.github.io/posts/MaximumLikelihoodEstimation/) for more information.
+We will be using the negative log-likelihood (NLL) as the loss function. If you are not familiar with the concept of maximum likelihood estimation or negative log-likelihood, please refer to the [post](https://jiselectric.github.io/posts/NLL/) for more information.
 
 ```python
 log_likelihood = 0.0
