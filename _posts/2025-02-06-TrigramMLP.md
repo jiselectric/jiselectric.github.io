@@ -6,7 +6,7 @@ writer: Ji Kim
 categories:
     - Paper Review
 tags:
-    - []
+    - [Bengio, Neural Network, Language Model, N-gram, Curse of Dimensionality, Word Embedding, Out of Vocabulary, OOV, Mini-Batch Training, Train Validation Test Split, Weight Initialization, Batch Normalization]
 
 toc: true
 toc_sticky: true
