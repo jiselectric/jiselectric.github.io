@@ -54,7 +54,7 @@ N-gram models use discrete representation for words, which harms the generalizat
 3. Lack of Syntactic and Semantic Similarities
 
     <center>
-        <img src="{{ '/assets/img/bengio/generalize.png' | relative_url }}" alt="embdding steps">
+        <img src="{{ '/assets/img/bengio/Generalize.png' | relative_url }}" alt="embdding steps">
     </center>
 
     N-gram model fail to take similarities between words into account. For example, `"The cat is walking in the bedroom` in the training corpus should be able to generate sentence like `"The dog is running in the kitchen"` since there are semantic similarities between `cat` and `dog` and `bedroom` and `kitchen`. However, N-gram model will assign low probabilities to these sentences since the context window is too small to capture these relationships.
@@ -65,7 +65,7 @@ N-gram models use discrete representation for words, which harms the generalizat
 In order to tackle the above problems (especially the third one), Bengio proposed a neural network based language model that uses embedding to capture the syntactic and semantic similarities between words.
 
 <center>
-    <img src="{{ '/assets/img/bengio/embedding.png' | relative_url }}" alt="embdding steps">
+    <img src="{{ '/assets/img/bengio/Embedding.png' | relative_url }}" alt="embdding steps">
 </center>
 
 Steps above explained in more modern-day lingo:
@@ -86,7 +86,7 @@ Steps above explained in more modern-day lingo:
 
 ### Model Architecture
 <center>
-    <img src="{{ '/assets/img/bengio/architecture.png' | relative_url }}" alt="embdding steps">
+    <img src="{{ '/assets/img/bengio/Architecture.png' | relative_url }}" alt="embdding steps">
 </center>
 
 For our implementation, we will use the following notations:
@@ -272,7 +272,7 @@ plt.plot(stepi, lossi)
 ```
 
 <center>
-    <img src="{{ '/assets/img/bengio/loss.png' | relative_url }}" alt="loss">
+    <img src="{{ '/assets/img/bengio/Loss.png' | relative_url }}" alt="loss">
 </center>
 
 ### Compute the Loss
