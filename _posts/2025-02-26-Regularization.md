@@ -1,5 +1,5 @@
 ---
-title: "L1 & L2 Regularization Explained"
+title: "Bias-Variance Tradeoff and Regularization"
 excerpt: "Notes on regularization techniques in machine learning"
 
 writer: Ji Kim
