@@ -528,7 +528,7 @@ x.mean: tensor(-0.0089) x.std: tensor(1.0125)
 y.mean: tensor(-0.0003) y.std: tensor(1.0168)
 ```
 
-For Multi-Layer Perceptron (MLP), we can have a deep neural network with stacked non-linear activation functions. The weight initialization techniques that we will be discussing in the next section ensures that the activation state does not explore nor vanish during the training process by multiplying the appropriate scaling factor to the weights.
+For Multi-Layer Perceptron (MLP), we can have a deep neural network with stacked non-linear activation functions. The weight initialization techniques that we will be discussing in the next section ensures that the activation state does not explode nor vanish during the training process by multiplying the appropriate scaling factor to the weights.
 
 
 ## Kaiming He Initialization
